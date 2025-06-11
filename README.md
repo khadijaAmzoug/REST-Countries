@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/khadijaAmzoug/REST-Countries
-- Live Site URL: https://timely-taiyaki-c4446d.netlify.app/
+- Live Site URL: https://thunderous-marigold-30aa1a.netlify.app/
 
 ## My process
 
