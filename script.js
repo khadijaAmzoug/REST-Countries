@@ -4,7 +4,7 @@ const regionFilter = document.getElementById('region-filter');
 
 let allCountries = [];
 
-fetch('https://restcountries.com/v3.1/all')
+fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,tld,currencies,languages,borders')
   .then(response => response.json())
   .then(data => {
     allCountries = data;
