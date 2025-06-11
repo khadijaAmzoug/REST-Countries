@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ---------------- Layout ---------------- */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* ---------------- Header ---------------- */
+
+header {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+/* ---------------- Back Button ---------------- */
+
+#back-btn {
+  margin-bottom: 3rem;
+  padding: 0.6rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: hsl(200, 15%, 8%);
+  font-weight: 500;
+}
+
+#theme-toggle {
+  background-color: hsl(0, 0%, 100%); 
+  color: hsl(200, 15%, 35%);          
+  border: none;
+  box-shadow: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+
+/* ---------------- Country Detail Layout ---------------- */
+
+.country-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.country-detail img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.detail-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detail-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.detail-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.detail-columns div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.detail-columns p {
+  margin-bottom: 0.6rem;
+}
+
+/* ---------------- Border Countries ---------------- */
+
+.borders {
+  margin-top: 1.5rem;
+}
+
+.borders h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.borders ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-left: 0;
+}
+
+.borders li {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Dark Mode ---------------- */
+
+body.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-mode header,
+body.dark-mode #back-btn,
+body.dark-mode .borders li {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-mode #back-btn {
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .country-detail img {
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .borders li {
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+body.dark-mode #theme-toggle {
+  background-color: hsl(209, 23%, 22%); 
+  color: hsl(0, 0%, 70%);               
+  border: none;
+  box-shadow: none;
+}
+
+
+#theme-toggle:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+
+@media (max-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem; 
+  }
+
+  header h1 {
+    font-size: 1rem; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%; 
+  }
+
+  #theme-toggle {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+}

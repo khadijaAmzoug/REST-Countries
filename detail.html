@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Country Details</title>
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Where in the world?</h1>
+      <button id="theme-toggle">Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <button id="back-btn">← Back</button>
+    
+    <div class="country-detail">
+      <img class="flag" src="" alt="Country flag" />
+
+      <div class="detail-content">
+        <h2 class="country-name">Country Name</h2>
+
+        <div class="detail-columns">
+          <div class="info">
+            <p><strong>Native Name:</strong> <span class="native-name"></span></p>
+            <p><strong>Population:</strong> <span class="population"></span></p>
+            <p><strong>Region:</strong> <span class="region"></span></p>
+            <p><strong>Sub Region:</strong> <span class="sub-region"></span></p>
+            <p><strong>Capital:</strong> <span class="capital"></span></p>
+          </div>
+
+          <div class="second-part">
+            <p><strong>Top Level Domain:</strong> <span class="domain"></span></p>
+            <p><strong>Currency:</strong> <span class="currency"></span></p>
+            <p><strong>Language:</strong> <span class="language"></span></p>
+          </div>
+        </div>
+
+        <div class="borders">
+          <h3>Border Countries:</h3>
+          <ul class="border-list">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="detail.js"></script>
+</body>
+</html>
